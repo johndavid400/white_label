@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: white_label_dev
+  username: jd
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: white_label_test
+  username: jd
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: white_label_production
+  username: jd
