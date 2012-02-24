@@ -1,3 +1,20 @@
+GIT
+  remote: git://github.com/spree/spree_skrill.git
+  revision: 37e6159aa71ec053499e2c7aa9cf799a3b3bdb39
+  ref: 37e6159aa71ec053499e2c7aa9cf799a3b3bdb39
+  specs:
+    spree_skrill (0.70.1)
+      spree_core (>= 0.70.1)
+
+GIT
+  remote: git://github.com/spree/spree_usa_epay.git
+  revision: 0cb57b4afbf1eef6a0ad67a4a1ea506c6418fde1
+  ref: 0cb57b4afbf1eef6a0ad67a4a1ea506c6418fde1
+  specs:
+    spree_usa_epay (0.70.1)
+      savon
+      spree_core (~> 1.0.0.rc1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -41,6 +58,8 @@ GEM
     activesupport (3.1.3)
       multi_json (~> 1.0)
     acts_as_list (0.1.4)
+    akami (1.0.0)
+      gyoku (>= 0.4.0)
     ansi (1.4.2)
     arel (2.2.3)
     bcrypt-ruby (3.0.1)
@@ -67,8 +86,12 @@ GEM
     execjs (1.3.0)
       multi_json (~> 1.0)
     ffaker (1.12.1)
+    gyoku (0.4.4)
+      builder (>= 2.1.2)
     highline (1.6.8)
     hike (1.2.1)
+    httpi (0.9.6)
+      rack
     i18n (0.6.0)
     jquery-rails (1.0.19)
       railties (~> 3.0)
@@ -95,6 +118,7 @@ GEM
       activerecord (>= 3.0.0)
       railties (>= 3.0.0)
     nokogiri (1.5.0)
+    nori (1.1.0)
     orm_adapter (0.0.6)
     paperclip (2.5.0)
       activerecord (>= 2.3.0)
@@ -138,6 +162,14 @@ GEM
       railties (~> 3.1.0)
       sass (~> 3.1.10)
       tilt (~> 1.3.2)
+    savon (0.9.9)
+      akami (~> 1.0)
+      builder (>= 2.1.2)
+      gyoku (>= 0.4.0)
+      httpi (~> 0.9)
+      nokogiri (>= 1.4.0)
+      nori (~> 1.1)
+      wasabi (~> 2.1)
     spree (1.0.0)
       spree_api (= 1.0.0)
       spree_auth (= 1.0.0)
@@ -195,6 +227,8 @@ GEM
       multi_json (>= 1.0.2)
     warden (1.0.6)
       rack (>= 1.0)
+    wasabi (2.1.0)
+      nokogiri (>= 1.4.0)
 
 PLATFORMS
   ruby
@@ -205,6 +239,8 @@ DEPENDENCIES
   pg
   rails (= 3.1.3)
   sass-rails (~> 3.1.5)
-  spree (= 1.0.0)
+  spree
+  spree_skrill!
+  spree_usa_epay!
   turn (= 0.8.2)
   uglifier (>= 1.0.3)
