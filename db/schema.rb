@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120224142616) do
+ActiveRecord::Schema.define(:version => 20120224162143) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -468,6 +468,19 @@ ActiveRecord::Schema.define(:version => 20120224142616) do
     t.integer  "transaction_id"
     t.integer  "customer_id"
     t.string   "payment_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_slides", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.string   "link_url"
+    t.boolean  "published"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

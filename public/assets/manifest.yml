@@ -1,4 +1,38 @@
 --- 
+admin/bg/spree_50.png: admin/bg/spree_50.png
+categories/belts  cooling.jpg: categories/belts  cooling.jpg
+categories/belts & cooling.jpg: categories/belts & cooling.jpg
+categories/belts & cooling.png: categories/belts & cooling.png
+categories/brakes  wheel bearings.jpg: categories/brakes  wheel bearings.jpg
+categories/brakes & wheel bearings.jpg: categories/brakes & wheel bearings.jpg
+categories/brakes & wheel bearings.png: categories/brakes & wheel bearings.png
+categories/brakes wheel bearings.jpg: categories/brakes wheel bearings.jpg
+categories/chassis  steering.jpg: categories/chassis  steering.jpg
+categories/chassis & steering.jpg: categories/chassis & steering.jpg
+categories/chassis & steering.png: categories/chassis & steering.png
+categories/drive train.jpg: categories/drive train.jpg
+categories/drive train.png: categories/drive train.png
+categories/electrical.jpg: categories/electrical.jpg
+categories/electrical.png: categories/electrical.png
+categories/engine.jpg: categories/engine.jpg
+categories/engine.png: categories/engine.png
+categories/exhaust  clutch.jpg: categories/exhaust  clutch.jpg
+categories/exhaust & clutch.jpg: categories/exhaust & clutch.jpg
+categories/exhaust & clutch.png: categories/exhaust & clutch.png
+categories/exhaust & clutch1.png: categories/exhaust & clutch1.png
+categories/fuel  emission.jpg: categories/fuel  emission.jpg
+categories/fuel & emission.jpg: categories/fuel & emission.jpg
+categories/fuel & emission.png: categories/fuel & emission.png
+categories/heating  air conditioning.jpg: categories/heating  air conditioning.jpg
+categories/heating & air conditioning.jpg: categories/heating & air conditioning.jpg
+categories/heating & air conditioning.png: categories/heating & air conditioning.png
+categories/ignition  engine filters.jpg: categories/ignition  engine filters.jpg
+categories/ignition & engine filters.jpg: categories/ignition & engine filters.jpg
+categories/ignition & engine filters.png: categories/ignition & engine filters.png
+categories/vision, manuals,  misc.jpg: categories/vision, manuals,  misc.jpg
+categories/vision, manuals, & misc.jpg: categories/vision, manuals, & misc.jpg
+categories/vision, manuals, & misc.png: categories/vision, manuals, & misc.png
+new_shipping_ad.png: new_shipping_ad.png
 spree_50.png: spree_50.png
 admin/all.js: admin/all.js
 application.js: application.js
@@ -6,6 +40,70 @@ store/all.js: store/all.js
 admin/all.css: admin/all.css
 application.css: application.css
 store/all.css: store/all.css
+README.textile: README.textile
+demos.html: demos.html
+demos/colorbox/border.png: demos/colorbox/border.png
+demos/colorbox/controls.png: demos/colorbox/controls.png
+demos/colorbox/internet_explorer/borderBottomCenter.png: demos/colorbox/internet_explorer/borderBottomCenter.png
+demos/colorbox/internet_explorer/borderBottomLeft.png: demos/colorbox/internet_explorer/borderBottomLeft.png
+demos/colorbox/internet_explorer/borderBottomRight.png: demos/colorbox/internet_explorer/borderBottomRight.png
+demos/colorbox/internet_explorer/borderMiddleLeft.png: demos/colorbox/internet_explorer/borderMiddleLeft.png
+demos/colorbox/internet_explorer/borderMiddleRight.png: demos/colorbox/internet_explorer/borderMiddleRight.png
+demos/colorbox/internet_explorer/borderTopCenter.png: demos/colorbox/internet_explorer/borderTopCenter.png
+demos/colorbox/internet_explorer/borderTopLeft.png: demos/colorbox/internet_explorer/borderTopLeft.png
+demos/colorbox/internet_explorer/borderTopRight.png: demos/colorbox/internet_explorer/borderTopRight.png
+demos/colorbox/loading.gif: demos/colorbox/loading.gif
+demos/colorbox/loading_background.png: demos/colorbox/loading_background.png
+demos/colorbox/overlay.png: demos/colorbox/overlay.png
+demos/images/251356.jpg: demos/images/251356.jpg
+demos/images/apple-touch-icon.png: demos/images/apple-touch-icon.png
+demos/images/favicon.ico: demos/images/favicon.ico
+demos/images/slide-civil-1.jpg: demos/images/slide-civil-1.jpg
+demos/images/slide-civil-2.jpg: demos/images/slide-civil-2.jpg
+demos/images/slide-env-1.jpg: demos/images/slide-env-1.jpg
+demos/images/slide-env-2.jpg: demos/images/slide-env-2.jpg
+demos/images/slide-tele-1.jpg: demos/images/slide-tele-1.jpg
+demos/images/slide-tele-2.jpg: demos/images/slide-tele-2.jpg
+demos/images/th-slide-civil-1.jpg: demos/images/th-slide-civil-1.jpg
+demos/images/th-slide-civil-2.jpg: demos/images/th-slide-civil-2.jpg
+demos/images/th-slide-env-1.jpg: demos/images/th-slide-env-1.jpg
+demos/images/th-slide-env-2.jpg: demos/images/th-slide-env-2.jpg
+demos/video/movie.mp4: demos/video/movie.mp4
+demos/video/movie.ogg: demos/video/movie.ogg
+demos/video/movie.webm: demos/video/movie.webm
+expand.html: expand.html
+images/arrows-metallic.png: images/arrows-metallic.png
+images/arrows-minimalist.png: images/arrows-minimalist.png
+images/construction.gif: images/construction.gif
+images/cs-portfolio.png: images/cs-portfolio.png
+images/default.png: images/default.png
+index.html: index.html
+license.txt: license.txt
+simple.html: simple.html
+video.html: video.html
+README: README
+demo/demo.html: demo/demo.html
+demo/images/dev7logo.png: demo/images/dev7logo.png
+demo/images/nemo.jpg: demo/images/nemo.jpg
+demo/images/toystory.jpg: demo/images/toystory.jpg
+demo/images/up.jpg: demo/images/up.jpg
+demo/images/walle.jpg: demo/images/walle.jpg
+themes/default/arrows.png: themes/default/arrows.png
+themes/default/bullets.png: themes/default/bullets.png
+themes/default/loading.gif: themes/default/loading.gif
+themes/orman/arrows.png: themes/orman/arrows.png
+themes/orman/bullets.png: themes/orman/bullets.png
+themes/orman/loading.gif: themes/orman/loading.gif
+themes/orman/readme.txt: themes/orman/readme.txt
+themes/orman/ribbon.png: themes/orman/ribbon.png
+themes/orman/slider.png: themes/orman/slider.png
+themes/pascal/bullets.png: themes/pascal/bullets.png
+themes/pascal/controlnav.png: themes/pascal/controlnav.png
+themes/pascal/featured.png: themes/pascal/featured.png
+themes/pascal/loading.gif: themes/pascal/loading.gif
+themes/pascal/readme.txt: themes/pascal/readme.txt
+themes/pascal/ribbon.png: themes/pascal/ribbon.png
+themes/pascal/slider.png: themes/pascal/slider.png
 analytics_dashboard_preview.png: analytics_dashboard_preview.png
 admin/bg/active-tab.png: admin/bg/active-tab.png
 admin/bg/admin_tab_back.png: admin/bg/admin_tab_back.png
@@ -25,7 +123,6 @@ admin/bg/header_bg.jpg: admin/bg/header_bg.jpg
 admin/bg/menu-current.png: admin/bg/menu-current.png
 admin/bg/red-stripes.gif: admin/bg/red-stripes.gif
 admin/bg/red-stripes.png: admin/bg/red-stripes.png
-admin/bg/spree_50.png: admin/bg/spree_50.png
 admin/bg/subnav-divider.png: admin/bg/subnav-divider.png
 admin/bg/subnav.png: admin/bg/subnav.png
 admin/bg/tab-back.png: admin/bg/tab-back.png

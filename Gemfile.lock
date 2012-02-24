@@ -208,6 +208,8 @@ GEM
       spree_core (= 1.0.0)
     spree_sample (1.0.0)
       spree_core (= 1.0.0)
+    spree_slider (1.0.1)
+      spree_core (~> 1.0.0)
     sprockets (2.0.3)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -241,6 +243,7 @@ DEPENDENCIES
   sass-rails (~> 3.1.5)
   spree
   spree_skrill!
+  spree_slider
   spree_usa_epay!
   turn (= 0.8.2)
   uglifier (>= 1.0.3)
