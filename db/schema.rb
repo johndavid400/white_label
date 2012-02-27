@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120224162143) do
+ActiveRecord::Schema.define(:version => 20120224223636) do
 
   create_table "spree_activators", :force => true do |t|
     t.string   "description"
@@ -541,6 +541,7 @@ ActiveRecord::Schema.define(:version => 20120224162143) do
     t.integer  "icon_file_size"
     t.datetime "icon_updated_at"
     t.text     "description"
+    t.string   "image_file_name"
   end
 
   add_index "spree_taxons", ["parent_id"], :name => "index_taxons_on_parent_id"
