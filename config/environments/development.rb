@@ -23,9 +23,6 @@ WhiteLabel::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 
   # Do not compress assets
-  config.assets.compress = true
-  config.assets.compile = true
-  config.assets.digest = true
 
   # Expands the lines which load the assets
   config.assets.debug = true
