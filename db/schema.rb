@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20120224223636) do
 
   create_table "spree_adjustments", :force => true do |t|
     t.integer  "source_id"
-    t.decimal  "amount",          :precision => 8, :scale => 2
+    t.decimal  "amount"
     t.string   "label"
     t.string   "source_type"
     t.integer  "adjustable_id"
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(:version => 20120224223636) do
     t.boolean  "locked"
     t.integer  "originator_id"
     t.string   "originator_type"
-    t.boolean  "eligible",                                      :default => true
+    t.boolean  "eligible",        :default => true
     t.string   "adjustable_type"
   end
 
@@ -212,11 +212,11 @@ ActiveRecord::Schema.define(:version => 20120224223636) do
 
   create_table "spree_orders", :force => true do |t|
     t.string   "number",               :limit => 15
-    t.decimal  "item_total",                         :precision => 8, :scale => 2, :default => 0.0, :null => false
-    t.decimal  "total",                              :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.decimal  "item_total",                                                       :default => 0.0, :null => false
+    t.decimal  "total",                                                            :default => 0.0, :null => false
     t.string   "state"
-    t.decimal  "adjustment_total",                   :precision => 8, :scale => 2, :default => 0.0, :null => false
-    t.decimal  "credit_total",                       :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.decimal  "adjustment_total",                                                 :default => 0.0, :null => false
+    t.decimal  "credit_total",                                                     :default => 0.0, :null => false
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -246,7 +246,7 @@ ActiveRecord::Schema.define(:version => 20120224223636) do
   end
 
   create_table "spree_payments", :force => true do |t|
-    t.decimal  "amount",            :precision => 8, :scale => 2, :default => 0.0, :null => false
+    t.decimal  "amount",            :default => 0.0, :null => false
     t.integer  "order_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -267,10 +267,10 @@ ActiveRecord::Schema.define(:version => 20120224223636) do
   add_index "spree_pending_promotions", ["user_id"], :name => "index_spree_pending_promotions_on_user_id"
 
   create_table "spree_preferences", :force => true do |t|
-    t.string   "name"
-    t.integer  "owner_id"
-    t.string   "owner_type"
-    t.text     "value"
+    t.string   "name",       :limit => 100
+    t.integer  "owner_id",   :limit => 30
+    t.string   "owner_type", :limit => 50
+    t.text     "value",      :limit => 255
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "key"
@@ -512,12 +512,12 @@ ActiveRecord::Schema.define(:version => 20120224223636) do
   end
 
   create_table "spree_tax_rates", :force => true do |t|
-    t.decimal  "amount",            :precision => 8, :scale => 4
+    t.decimal  "amount"
     t.integer  "zone_id"
     t.integer  "tax_category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "included_in_price",                               :default => false
+    t.boolean  "included_in_price", :default => false
   end
 
   create_table "spree_taxonomies", :force => true do |t|
@@ -567,15 +567,15 @@ ActiveRecord::Schema.define(:version => 20120224223636) do
   end
 
   create_table "spree_users", :force => true do |t|
-    t.string   "encrypted_password"
-    t.string   "password_salt"
+    t.string   "encrypted_password",   :limit => 128
+    t.string   "password_salt",        :limit => 128
     t.string   "email"
     t.string   "remember_token"
     t.string   "persistence_token"
     t.string   "reset_password_token"
     t.string   "perishable_token"
-    t.integer  "sign_in_count",                      :default => 0, :null => false
-    t.integer  "failed_attempts",                    :default => 0, :null => false
+    t.integer  "sign_in_count",                       :default => 0, :null => false
+    t.integer  "failed_attempts",                     :default => 0, :null => false
     t.datetime "last_request_at"
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"

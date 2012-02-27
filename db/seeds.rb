@@ -33,39 +33,27 @@ t9 = cat.children.create(name: "Heating and A/C", image: File.open(File.join(Rai
 t10 = cat.children.create(name: "Engine", image: File.open(File.join(Rails.root, "db", "seeds", "images", "engine.jpg")))
 t11 = cat.children.create(name: "Vision, Manuals, and Misc.", image: File.open(File.join(Rails.root, "db", "seeds", "images", "vision_manuals_misc.jpg")))
 
-sparkplug = Spree::Product.create(name: "Rapid Fire Plug", description: "Spark Plug made by ACDelco", available_on: 3.days.ago, price: "4.23")
-sparkplug.save
-sparkplug.images.new(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "sparkplug.jpg")))
-sparkplug.save
+sparkplug = Spree::Product.create(name: "Rapid Fire Plug", description: "Spark Plug made by ACDelco", available_on: 3.days.ago, price: "4.23", permalink: "spark-plug")
+s = sparkplug.images.create(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "sparkplug.jpg")))
 sparkplug.taxons = [t1]
 
-pulley = Spree::Product.create(name: "Idler Pulley", description: "Pulley for a car", available_on: 3.days.ago, price: "14.44")
-pulley.save
-pulley.images.new(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "pulley.jpg")))
-pulley.save
+pulley = Spree::Product.create(name: "Idler Pulley", description: "Pulley for a car", available_on: 3.days.ago, price: "14.44", permalink: "idler-pulley")
 pulley.taxons = [t2]
+p = pulley.images.create(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "pulley.jpg")))
 
-injector = Spree::Product.create(name: "Fuel Injector", description: "Fuel injector multi port", available_on: 3.days.ago, price: "45.34")
-injector.save
-injector.images.new(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "injector.jpg")))
-injector.save
+injector = Spree::Product.create(name: "Fuel Injector", description: "Fuel injector multi port", available_on: 3.days.ago, price: "45.34", permalink: "fuel-injector")
 injector.taxons = [t3]
+i = injector.images.create(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "injector.jpg")))
 
-shift_cable = Spree::Product.create(name: "Shift Cable", description: "Shift selector cable, 4spd", available_on: 3.days.ago, price: "54.34")
-shift_cable.save
-shift_cable.images.new(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "shift_cable.jpg")))
-shift_cable.save
+shift_cable = Spree::Product.create(name: "Shift Cable", description: "Shift selector cable, 4spd", available_on: 3.days.ago, price: "54.34", permalink: "shift-cable")
 shift_cable.taxons = [t4]
+s = shift_cable.images.create(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "shift_cable.jpg")))
 
-brake_pads = Spree::Product.create(name: "Brake Pads", description: "Front brake pads", available_on: 3.days.ago, price: "54.34")
-brake_pads.save
-brake_pads.images.new(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "brake_pads.jpg")))
-brake_pads.save
+brake_pads = Spree::Product.create(name: "Brake Pads", description: "Front brake pads", available_on: 3.days.ago, price: "54.34", permalink: "brake-pads")
 brake_pads.taxons = [t5]
+b = brake_pads.images.create(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "brake_pads.jpg")))
 
-steering_pump = Spree::Product.create(name: "Steering Pump", description: "Power steering pump", available_on: 3.days.ago, price: "54.34")
-steering_pump.save
-steering_pump.images.new(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "steering_pump.jpg")))
-steering_pump.save
+steering_pump = Spree::Product.create(name: "Steering Pump", description: "Power steering pump", available_on: 3.days.ago, price: "54.34", permalink: "steering-pump")
 steering_pump.taxons = [t6]
+st = steering_pump.images.create(attachment: File.open(File.join(Rails.root, "db", "seeds", "products", "steering_pump.jpg")))
 
